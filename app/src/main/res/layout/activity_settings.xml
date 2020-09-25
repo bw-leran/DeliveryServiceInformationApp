@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.SettingsActivity">
+
+    <TextView
+        android:id="@+id/settings_cityText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="City:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_returnBtn" />
+
+    <ListView
+        android:id="@+id/settings_regionList"
+        android:layout_width="380dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_cityText2" />
+
+    <Button
+        android:id="@+id/settings_returnBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Return"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settings_langText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Language:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_regionList" />
+
+    <ToggleButton
+        android:id="@+id/settings_langBtn"
+        android:layout_width="261dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="English"
+        android:textOff="EN"
+        android:textOn="EN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_langText" />
+
+    <ToggleButton
+        android:id="@+id/settings_langBtn2"
+        android:layout_width="261dp"
+        android:layout_height="56dp"
+        android:text="English"
+        android:textOff="中文 - 简体字"
+        android:textOn="中文 - 简体字"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_langBtn" />
+
+    <ToggleButton
+        android:id="@+id/settings_langBtn3"
+        android:layout_width="261dp"
+        android:layout_height="56dp"
+        android:text="English"
+        android:textOff="中文 - 繁體字"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_langBtn2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
